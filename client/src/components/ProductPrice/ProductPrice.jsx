@@ -1,8 +1,6 @@
 import React from 'react';
 
-import ProductInfo from '../ProductInfo/ProductInfo';
-
-export default class App extends React.Component {
+export default class ProductPrice extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -11,7 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        <ProductInfo />
+        ProductPrice Info
       </div>
     );
   }
