@@ -1,7 +1,6 @@
 {
   "name": "mvp-rtb",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "react-dev": "webpack -d --watch",
@@ -56,5 +55,7 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "source-map-loader": "^1.1.0"
-  }
+  },
+  "keywords": [],
+  "description": ""
 }

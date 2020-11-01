@@ -44,11 +44,11 @@ module.exports = {
   devServer: {
     contentBase: path.join(__dirname, '/client/dist'),
     port: 8080,
-    proxy: {
-      '/': {
-        target: 'http://localhost:3002/',
-      },
-    },
+    // proxy: {
+    //   '/': {
+    //     target: 'http://localhost:3002/',
+    //   },
+    // },
   },
   resolve: { extensions: ['.js', '.jsx'] },
 };
