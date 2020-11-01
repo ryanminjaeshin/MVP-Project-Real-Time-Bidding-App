@@ -8,10 +8,10 @@ function Timer(props) {
         Timer
         <CountdownCircleTimer
           onComplete={() => (
-            [true]
+            console.log('SOLD')
           )}
           isPlaying
-          duration={60}
+          duration={5}
           colors={[
             ['#004777', 0.33],
             ['#F7B801', 0.33],
@@ -25,7 +25,21 @@ function Timer(props) {
   }
   return (
     <div>
-      FALSE
+      Timer
+      <CountdownCircleTimer
+        onComplete={() => (
+          console.log('SOLD')
+        )}
+        isPlaying
+        duration={5}
+        colors={[
+          ['#004777', 0.33],
+          ['#F7B801', 0.33],
+          ['#A30000', 0.33],
+        ]}
+      >
+        {({ remainingTime }) => remainingTime}
+      </CountdownCircleTimer>
     </div>
   );
 }
