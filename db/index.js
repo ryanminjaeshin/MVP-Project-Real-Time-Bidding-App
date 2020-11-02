@@ -9,6 +9,7 @@ db.once('open', () => {
   console.log('Lovely MongoDB is connected');
 });
 
+/*---------------------------------------------------------*/
 
 // Schema
 const gallerySchema = new mongoose.Schema({
@@ -22,3 +23,5 @@ const gallerySchema = new mongoose.Schema({
 
 // Model
 const Gallery = mongoose.model('Gallery', gallerySchema);
+
+/*---------------------------------------------------------*/

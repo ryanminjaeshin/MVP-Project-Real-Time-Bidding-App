@@ -18,6 +18,7 @@ app.get('/item/:id', (req, res) => {
   res.status(200).send("HAHA");
 });
 
+app.get('')
 app.listen(PORT, () => {
   console.log(`server is running and listening on port ${PORT}`);
 });
