@@ -9,7 +9,7 @@ for (let i = 0; i < 2; i += 1) {
     id: i,
     name: faker.lorem.words(),
     description: faker.lorem.sentences(),
-    price: Math.floor(faker.random.number({
+    startingBid: Math.floor(faker.random.number({
       min: 1000000,
       max: 3000000,
     }) / 10000) * 10000,

@@ -16,7 +16,7 @@ const gallerySchema = new mongoose.Schema({
   id: { type: Number, unique: true, required: true },
   name: { type: String, required: true },
   description: String,
-  price: { type: Number, required: true },
+  startingBid: { type: Number, required: true },
   image: String,
 });
 
@@ -24,6 +24,8 @@ const gallerySchema = new mongoose.Schema({
 const Gallery = mongoose.model('Gallery', gallerySchema);
 
 /*---------------------------------------------------------*/
+
+//
 
 module.exports = {
   Gallery,
