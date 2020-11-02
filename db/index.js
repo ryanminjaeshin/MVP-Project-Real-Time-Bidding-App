@@ -14,7 +14,6 @@ db.once('open', () => {
 // Schema
 const gallerySchema = new mongoose.Schema({
   id: { type: Number, unique: true, required: true },
-  category: String,
   name: { type: String, required: true },
   description: String,
   price: { type: Number, required: true },

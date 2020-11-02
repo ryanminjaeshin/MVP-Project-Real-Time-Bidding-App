@@ -6,7 +6,8 @@
     "react-dev": "webpack -d --watch",
     "server": "nodemon server/index.js",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "seed": "node db/seed.js"
   },
   "repository": {
     "type": "git",
