@@ -25,8 +25,17 @@ const Gallery = mongoose.model('Gallery', gallerySchema);
 
 /*---------------------------------------------------------*/
 
-//
+const getOneItem = (id, callback) => {
+  Gallery.findOne({ id }, (err, itemInfo) => {
+    if (err) {
+      callback(err);
+    } else {
+      callback(null, itemInfo);
+    }
+  });
+};
 
 module.exports = {
   Gallery,
+  getOneItem,
 };
