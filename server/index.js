@@ -15,8 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/item/:id', (req, res) => {
   const { id } = req.params;
-  res.status(200).send('WORKS');
-  console.log("POSTMANWORKING");
+  res.status(200).send("HAHA");
 });
 
 app.listen(PORT, () => {
