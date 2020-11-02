@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class App extends React.Component {
+export default class ProductPrice extends React.Component {
   constructor() {
     super();
     this.state = {};
@@ -9,7 +9,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        HELLO WORLD I AM RYAN !
+        ProductPrice Info
       </div>
     );
   }
