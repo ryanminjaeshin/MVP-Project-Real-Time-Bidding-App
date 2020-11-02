@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import ProductInfo from '../ProductInfo/ProductInfo';
 import Timer from '../Timer/Timer';
+import Bid from '../Bid/Bid';
 
 export default class App extends React.Component {
   constructor() {
@@ -12,15 +13,9 @@ export default class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log(this.state.refresh);
   }
 
   refreshTimer() {
-    // this.setState((prevState) => ({
-    //   refresh: !(prevState.refresh),
-    // }), () => {
-    //   window.location.reload(false);
-    // });
     window.location.reload(false);
   }
 
@@ -28,7 +23,8 @@ export default class App extends React.Component {
     return (
       <div>
         <ProductInfo />
-        <Timer time={this.state.time} refresh={this.state.refresh} />
+        <Timer refreshTimer={this.refreshTimer} />
+        <Bid refreshTimer={this.refreshTimer}/>
       </div>
     );
   }
