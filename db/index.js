@@ -9,6 +9,8 @@ db.once('open', () => {
   console.log('Lovely MongoDB is connected');
 });
 
+
+// Schema
 const gallerySchema = new mongoose.Schema({
   id: { type: Number, unique: true, required: true },
   category: String,
@@ -17,3 +19,6 @@ const gallerySchema = new mongoose.Schema({
   price: { type: Number, required: true },
   image: String,
 });
+
+// Model
+const Gallery = mongoose.model('Gallery', gallerySchema);
