@@ -6,7 +6,8 @@
     "react-dev": "webpack -d --watch",
     "server": "nodemon server/index.js",
     "start": "webpack-dev-server --open",
-    "build": "webpack"
+    "build": "webpack",
+    "seed": "node db/seed.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jquery": "^3.5.1",
     "mongodb": "^3.6.2",
-    "mongoose": "^5.10.6",
+    "mongoose": "^5.10.11",
     "nodemon": "^2.0.4",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
